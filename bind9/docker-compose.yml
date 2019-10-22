@@ -1,0 +1,14 @@
+dns1:
+    image: massalino/bind
+    container_name: dns1
+    restart: always
+dns2:
+    image: massalino/bind-slave
+    container_name: dns2
+    restart: always
+www:
+    image: httpd
+    container_name: www
+cliente:
+    image: massalino/ubuntu
+    container_name: ubuntu
